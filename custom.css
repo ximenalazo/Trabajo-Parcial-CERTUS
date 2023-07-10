@@ -1,0 +1,179 @@
+/* Fuentes externas */
+@import url('https://fonts.googleapis.com/css2? family= Cherry+Bomb+One & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+
+/*ESTILO GLOBAL*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 1em;
+    color: #1c1c1c;
+}
+
+/* BODY */
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(fondo\ formulario.png);
+    background-attachment: fixed;
+}
+
+#contactoWhatsapp {
+    width: 64px;
+    position: fixed;
+    right: 20px;
+    bottom:20px;
+
+}
+
+
+header {
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #ffffff;
+    background-color: #ABABC3;
+    background-position: center;
+    background-size: cover;
+}
+
+/*ESTILO AL TITULO*/
+h1 {
+    font-size: 5em;
+    font-family: 'Cherry Bomb One', cursive;
+    margin: 0px;
+    text-align: center;
+    color: #686A8C;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0px;
+    padding-bottom: 4%;
+    color: #BF396A;
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+}
+
+/*PÁGINA FORMULARIO*/
+main.pageform {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e2e2e2;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+/* PÁGINA DE CATALOGO */
+main.pageCatálogo {
+    font-size: 1em;
+    background-color: #c2bfc0c2;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+/* ARTICULOS */
+article {
+    border: #686A8C 2px solid;
+   
+}
+
+article:hover {
+    border: #c21778 2px solid;
+}
+
+article>img {
+    width: 100%;
+}
+
+article>h3 {
+    margin: 6px;
+    font-weight: 500;
+    color: #1c1c1c;
+}
+
+article>p {
+    margin: 10px 0px;
+
+}
+
+article>button {
+    margin-bottom: 20px;
+    font-size: 1em;
+    padding: 5px 5px;
+}
+
+.precioOriginal {
+    color: #565656;
+    text-decoration: line-through;
+}
+
+.precioDescuento {
+    color: #bd5a7e;
+    font-weight: 500;
+}
+
+.precioFinal {
+    color: #c1275f;
+    font-weight: 700;
+}
+
+/* CARRITO DE COMPRA */
+#carritovacio{
+    height: 200px;
+}
+/* PIE DE PÁGINA */
+footer {
+    background: #BF396A;
+    padding: 20px;
+    text-align: center;
+    color: #F2DFCE;
+}
+
+/* ELEMENTOS DEL FORMULARIO */
+label {
+    display: block;
+}
+
+form#FormCreateAccount>div {
+    margin-bottom: 20px;
+}
+
+form#FormCreateAccount>div>input[type="email"],
+form#FormCreateAccount>div>input[type="password"],
+form#FormCreateAccount>div>input[type="tel"],
+form#FormCreateAccount>div>input[type="cel"],
+form#FormCreateAccount>div>input[type="text"] {
+    width: 100%;
+}
+
+/*página de formulario*/
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(IMG/fondo\ formulario.png);
+    background-attachment: fixed;
+}
+.registroUsuario {
+    background-color: #e2e2e2;
+}
+
+h2 {
+
+    color: #BF396A;
+    text-align: center;
+}
+
+/*contacto por whatsapp*/
+#contactoWhatsapp {
+width: 64px;
+}
+
+#txtAddress1{
+    margin-bottom: 8px;
+}

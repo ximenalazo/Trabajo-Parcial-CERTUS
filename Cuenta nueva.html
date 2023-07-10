@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro - Javascript</title>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Cargar JQUERY -->
+    <script src="js/libraries/jquery-3.7.0.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+
+                <!-- FORMULARIO -->
+                <form id="registroUsuario" action="recibido.html" method="get">
+
+                    <!--Titulo del formulario-->
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>
+                                Crea tu cuenta
+                            </h1>
+                        </div>
+                    </div>
+
+
+                    <!-- Entrada de Nombre -->
+
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <div class="mb-3">
+                                <label for="inputName" clase="form-label"> Nombre</label>
+                                <input type="text" id="name" name="user" class="form-control">
+                                <small id="helpId" class="form-text text-muted">Escriba su nombre completo.</small>
+                                <span id="apoyoInputName" class="form-text" maxlength="30" style="display: none;">El
+                                    usuario tiene
+                                    que ser de 4 a 16
+                                    dígitos y
+                                    solo puede contener, letras, números y guón bajo.</span>
+                            </div>
+                        </div>
+
+                        <!-- Entrada de Apellido -->
+                        <div class="col-12 col-sm-6">
+                            <div class="mb-3">
+                                <label for="user" class="form-label">Apellido</label>
+                                <input type="text" id="user" maxlength="30" name="name" class="form-control">
+                                <small id="helpId" class="form-text text-muted">Escriba ambos apellidos.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Entrada de Correo -->
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" name="email" id="inputEmail"
+                            placeholder="abc@mail.com">
+                        <small id="emailHelpId" class="form-text text-muted">Ingrese su correo.</small>
+                    </div>
+
+                    <!-- Entrada de Género -->
+                    <div class="mb-3">
+                        <p class="form-label">Género</p>
+                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                            <input type="radio" class="btn-check" name="genero" id="inputMasculino" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="inputMasculino">Masculino</label>
+                            <input type="radio" class="btn-check" name="genero" id="inputFemenino" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="inputFemenino">Femenino</label>
+                            <input type="radio" class="btn-check" name="genero" id="inputOtro" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="inputOtro">Otro</label>
+                        </div>
+                    </div>
+
+                    <!-- Entrada de Nacimiento -->
+                    <div class="mb-3">
+                        <label for="" class="form-label">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" name="fecNac" id="inputFecNac">
+                        <small id="helpId" class="form-text text-muted">Ingrese día / mes / año</small>
+                    </div>
+
+
+
+                    <!-- Entrada de Usuario -->
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <div class="mb-3">
+                                <label for="user" clase="form-label"> Usuario</label>
+                                <input type="text" id="user" name="user" class="form-control">
+                                <small id="helpId" class="form-text text-muted">Escriba su nombre de usuario.</small>
+                                <span id="apoyoInputName" class="form-text" maxlength="30" style="display: none;">El
+                                    usuario tiene
+                                    que ser de 4 a 16
+                                    dígitos y
+                                    solo puede contener, letras, números y guón bajo.</span>
+                            </div>
+                        </div>
+
+                        <!-- Entrada de Contraseña -->
+                        <div class="col-12 col-sm-6">
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" id="password" maxlength="30" name="name" class="form-control">
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Entrada de checkbox para aceptar Términos y condiciones-->
+                    <div>
+                        <input type="checkbox" id="bolAccept" required>
+                        <label style="display: inline-block" for="bol">Acepto los<a target="_bank"
+                                href="Términos_Condiciones.html">Términos y
+                                Condiciones</a> para crear
+                            una
+                            cuenta.</label required>
+                    </div>
+
+                    <!-- Botón Submit -->
+
+                    <div class="row">
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-success" id="btnEnviar">Enviar</button>
+                        </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Cargar Javascript Personalizado -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
